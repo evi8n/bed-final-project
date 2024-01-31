@@ -1,9 +1,12 @@
 {
   "type": "module",
+  "prisma": {
+    "seed": "node ./prisma/seed.js"
+  },
   "devDependencies": {
     "prisma": "^5.9.0"
   },
-  "dependencies": {
-    "@prisma/client": "^5.9.0"
+  "scripts": {
+    "prisma": "prisma generate --schema prisma/schema.prisma"
   }
 }
